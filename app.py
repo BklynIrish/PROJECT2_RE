@@ -46,15 +46,7 @@ def welcome():
 
 @app.route("/scrape")
 def scrape():
-
-    # Run the scrape function
     renewable_scrape.renewable_scrape()
-
-
-    # Update the Mongo database using update and upsert=True
-    # mongo.db.renewables.replace_one({}, renewable_data, upsert=True)
-
-    # Redirect back to home page
     return redirect("/")
 
 @app.route("/hydro")
@@ -85,12 +77,13 @@ def location():
 
 @app.route("/sunburst")
 def sunburst():
-    data = json.load("my_renewables.json")
+    data =  json.load(open("my_renewables.json","r")) 
+
+    print(data["last_scrape"])
+
     print("Read Json")
-    print(data)
     # data = mongo.db.renewables.find_one()
-    return render_template("webscrape_sunburst.html")
-    #,r_last_refresh=data["renewable_refresh"],renewable_title_0=data["renewable_titles"][0],renewable_link_0=data["renewable_links"][0],renewable_title_1=data["renewable_titles"][1],renewable_link_1=data["renewable_links"][1], renewable_title_2 = data["renewable_titles"][2],renewable_link_2=data["renewable_links"][2],renewable_title_3=data["renewable_titles"][3],renewable_link_3=data["renewable_links"][3])
+    return render_template("webscrape_sunburst.html",r_last_refresh=data["last_scrape"],renewable_title_0=data["articles "][0],renewable_link_0=data["links"][0],renewable_title_1=data["articles "][1],renewable_link_1=data["links"][2], renewable_title_2 = data["articles "][2],renewable_link_2=data["links"][4],renewable_title_3=data["articles "][3],renewable_link_3=data["links"][6])
     # return render_template("templates/sunburst.html")
 
 
