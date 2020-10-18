@@ -7,6 +7,7 @@ from splinter import Browser
 from datetime import date
 from flask_pymongo import PyMongo
 import datetime
+import json
 
 renewables = { }
 now = datetime.datetime.now()
@@ -28,11 +29,12 @@ def renewable_scrape():
     title_list = []
     browser.visit(url)
 
-    
+    renewables = {}
     now = datetime.datetime.now()
     print ("Current date and time : ")
     last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
 
+    ##This Line
     renewables.update({"renewable_refresh": last_refresh })
 
     for x in range (5):
@@ -44,10 +46,17 @@ def renewable_scrape():
         title = link_[x].find('h2', class_='post-list-item__title').find('a').text
         link_list.append(link)
         title_list.append(title)
-        renewables.update({"renewable_links": link_list })
-        renewables.update({"renewable_titles": title_list })
-        now = datetime.datetime.now()
-        print ("Current date and time : ")
-        last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
-        renewables.update({"renewable_refresh": last_refresh })
-    return renewables
+
+        ##These two lines
+    renewables.update({"renewable_links": link_list })
+    renewables.update({"renewable_titles": title_list })
+        
+    now = datetime.datetime.now()
+    print ("Current date and time : ")
+    last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
+        # renewables.update({"renewable_refresh": last_refresh })
+    renewables = {"links": link_list, "articles ": title_list, "last_scrape": last_refresh}
+
+    out_file = open("my_renewables.json", "w") 
+  
+    json.dump(renewables, out_file, indent = 6) 

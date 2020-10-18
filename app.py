@@ -1,15 +1,16 @@
 import os
-
 import pandas as pd
 import numpy as np
-
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
-
 from flask import Flask, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
+import sqlalchemy
+from flask import Flask, render_template, redirect
+from flask_pymongo import PyMongo
+import renewable_scrape
+import json
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 #################################################
@@ -38,11 +39,23 @@ app = Flask(__name__)
 #################################################
 
 
-@app.route("/")
+@app.route("/") 
 def welcome():
-    """Return the homepage."""
+
     return render_template("index.html")
 
+@app.route("/scrape")
+def scrape():
+
+    # Run the scrape function
+    renewable_scrape.renewable_scrape()
+
+
+    # Update the Mongo database using update and upsert=True
+    # mongo.db.renewables.replace_one({}, renewable_data, upsert=True)
+
+    # Redirect back to home page
+    return redirect("/")
 
 @app.route("/hydro")
 def hydro():
@@ -68,32 +81,17 @@ def solar():
 @app.route("/location")
 def location():
     """Return dashboard.html."""
-    return render_template("location.html")
+    return render_template("templates/location.html")
 
 @app.route("/sunburst")
 def sunburst():
-    """Return dashboard.html."""
-    return render_template("sunburst.html")
-
-
-# @app.route("/")
-# def welcome():
-#     """List all available api routes."""
-#     return (
-#         f"Available Routes:<br/>"
-#         f"/api/v1.0/name<br/>"
-#         f"/api/v1.0/primary_fuel"
-#     )
-
-# @app.route("/api/v1.0/name")
-# def names():
-
-#     session = Session(engine)
-#     results = session.query(Dataset.name).all()
-#     session.close()
-#     all_names = list(np.ravel(results))
-#     return jsonify(all_names)
-
+    data = json.load("my_renewables.json")
+    print("Read Json")
+    print(data)
+    # data = mongo.db.renewables.find_one()
+    return render_template("webscrape_sunburst.html")
+    #,r_last_refresh=data["renewable_refresh"],renewable_title_0=data["renewable_titles"][0],renewable_link_0=data["renewable_links"][0],renewable_title_1=data["renewable_titles"][1],renewable_link_1=data["renewable_links"][1], renewable_title_2 = data["renewable_titles"][2],renewable_link_2=data["renewable_links"][2],renewable_title_3=data["renewable_titles"][3],renewable_link_3=data["renewable_links"][3])
+    # return render_template("templates/sunburst.html")
 
 
 if __name__ == '__main__':
