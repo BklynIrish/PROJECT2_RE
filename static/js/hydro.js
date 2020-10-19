@@ -17,8 +17,13 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var statesData = {
     "type": "FeatureCollection",
-    "features": [
-        { "type": "Feature", "id": "01", "properties": { "name": "Alabama", "production": 10839 }, "geometry": { "type": "Polygon", "coordinates": [
+    "features": [{
+            "type": "Feature",
+            "id": "01",
+            "properties": { "name": "Alabama", "production": 10839 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-87.359296, 35.00118],
                         [-85.606675, 34.984749],
@@ -54,8 +59,16 @@ var statesData = {
                         [-88.202745, 34.995703],
                         [-87.359296, 35.00118]
                     ]
-                ] } },
-        { "type": "Feature", "id": "02", "properties": { "name": "Alaska", "production": 1398 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "02",
+            "properties": { "name": "Alaska", "production": 1398 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-131.602021, 55.117982],
@@ -1286,8 +1299,16 @@ var statesData = {
                             [-187.107557, 52.992929]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "04", "properties": { "name": "Arizona", "production": 6096 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "04",
+            "properties": { "name": "Arizona", "production": 6096 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-109.042503, 37.000263],
                         [-109.04798, 31.331629],
@@ -1322,8 +1343,16 @@ var statesData = {
                         [-110.499369, 37.00574],
                         [-109.042503, 37.000263]
                     ]
-                ] } },
-        { "type": "Feature", "id": "05", "properties": { "name": "Arkansas", "production": 2719 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "05",
+            "properties": { "name": "Arkansas", "production": 2719 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-94.473842, 36.501861],
                         [-90.152536, 36.496384],
@@ -1363,8 +1392,16 @@ var statesData = {
                         [-94.616242, 36.501861],
                         [-94.473842, 36.501861]
                     ]
-                ] } },
-        { "type": "Feature", "id": "06", "properties": { "name": "California", "production": 40051 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "06",
+            "properties": { "name": "California", "production": 40051 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-123.233256, 42.006186],
                         [-122.378853, 42.011663],
@@ -1460,8 +1497,16 @@ var statesData = {
                         [-124.213628, 42.000709],
                         [-123.233256, 42.006186]
                     ]
-                ] } },
-        { "type": "Feature", "id": "08", "properties": { "name": "Colorado", "production": 1607 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "08",
+            "properties": { "name": "Colorado", "production": 1607 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-107.919731, 41.003906],
                         [-105.728954, 40.998429],
@@ -1480,8 +1525,16 @@ var statesData = {
                         [-109.04798, 40.998429],
                         [-107.919731, 41.003906]
                     ]
-                ] } },
-        { "type": "Feature", "id": "09", "properties": { "name": "Connecticut", "production": 522 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "09",
+            "properties": { "name": "Connecticut", "production": 522 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-73.053528, 42.039048],
                         [-71.799309, 42.022617],
@@ -1500,8 +1553,16 @@ var statesData = {
                         [-73.486206, 42.050002],
                         [-73.053528, 42.039048]
                     ]
-                ] } },
-        { "type": "Feature", "id": "10", "properties": { "name": "Delaware", "production": 0 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "10",
+            "properties": { "name": "Delaware", "production": 0 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-75.414089, 39.804456],
                         [-75.507197, 39.683964],
@@ -1517,8 +1578,16 @@ var statesData = {
                         [-75.616736, 39.831841],
                         [-75.414089, 39.804456]
                     ]
-                ] } },
-        { "type": "Feature", "id": "11", "properties": { "name": "District of Columbia", "production": 0 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "11",
+            "properties": { "name": "District of Columbia", "production": 0 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-77.035264, 38.993869],
                         [-76.909294, 38.895284],
@@ -1526,8 +1595,16 @@ var statesData = {
                         [-77.117418, 38.933623],
                         [-77.035264, 38.993869]
                     ]
-                ] } },
-        { "type": "Feature", "id": "12", "properties": { "name": "Florida", "production": 220 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "12",
+            "properties": { "name": "Florida", "production": 220 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-85.497137, 30.997536],
                         [-85.004212, 31.003013],
@@ -1608,8 +1685,16 @@ var statesData = {
                         [-87.600282, 30.997536],
                         [-85.497137, 30.997536]
                     ]
-                ] } },
-        { "type": "Feature", "id": "13", "properties": { "name": "Georgia", "production": 3485 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "13",
+            "properties": { "name": "Georgia", "production": 3485 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-83.109191, 35.00118],
                         [-83.322791, 34.787579],
@@ -1663,8 +1748,16 @@ var statesData = {
                         [-83.618546, 34.984749],
                         [-83.109191, 35.00118]
                     ]
-                ] } },
-        { "type": "Feature", "id": "15", "properties": { "name": "Hawaii", "production": 70 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "15",
+            "properties": { "name": "Hawaii", "production": 70 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-155.634835, 18.948267],
@@ -1734,8 +1827,16 @@ var statesData = {
                             [-159.468693, 22.228955]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "16", "properties": { "name": "Idaho", "production": 9112 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "16",
+            "properties": { "name": "Idaho", "production": 9112 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-116.04751, 49.000239],
                         [-116.04751, 47.976051],
@@ -1804,8 +1905,16 @@ var statesData = {
                         [-117.033359, 49.000239],
                         [-116.04751, 49.000239]
                     ]
-                ] } },
-        { "type": "Feature", "id": "17", "properties": { "name": "Illinois", "production": 131 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "17",
+            "properties": { "name": "Illinois", "production": 131 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-90.639984, 42.510065],
                         [-88.788778, 42.493634],
@@ -1875,8 +1984,16 @@ var statesData = {
                         [-90.420906, 42.329326],
                         [-90.639984, 42.510065]
                     ]
-                ] } },
-        { "type": "Feature", "id": "18", "properties": { "name": "Indiana", "production": 194 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "18",
+            "properties": { "name": "Indiana", "production": 194 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-85.990061, 41.759724],
                         [-84.807042, 41.759724],
@@ -1925,8 +2042,16 @@ var statesData = {
                         [-86.822556, 41.759724],
                         [-85.990061, 41.759724]
                     ]
-                ] } },
-        { "type": "Feature", "id": "19", "properties": { "name": "Iowa", "production": 749 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "19",
+            "properties": { "name": "Iowa", "production": 749 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-91.368417, 43.501391],
                         [-91.215062, 43.501391],
@@ -1979,8 +2104,16 @@ var statesData = {
                         [-96.451017, 43.501391],
                         [-91.368417, 43.501391]
                     ]
-                ] } },
-        { "type": "Feature", "id": "20", "properties": { "name": "Kansas", "production": 20 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "20",
+            "properties": { "name": "Kansas", "production": 20 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-101.90605, 40.001626],
                         [-95.306337, 40.001626],
@@ -1996,8 +2129,16 @@ var statesData = {
                         [-102.053927, 40.001626],
                         [-101.90605, 40.001626]
                     ]
-                ] } },
-        { "type": "Feature", "id": "21", "properties": { "name": "Kentucky", "production": 4007 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "21",
+            "properties": { "name": "Kentucky", "production": 4007 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-83.903347, 38.769315],
                         [-83.678792, 38.632391],
@@ -2075,8 +2216,16 @@ var statesData = {
                         [-84.215533, 38.807653],
                         [-83.903347, 38.769315]
                     ]
-                ] } },
-        { "type": "Feature", "id": "22", "properties": { "name": "Louisiana", "production": 1147 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "22",
+            "properties": { "name": "Louisiana", "production": 1147 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-93.608485, 33.018527],
                         [-91.16577, 33.002096],
@@ -2155,8 +2304,16 @@ var statesData = {
                         [-94.041164, 33.018527],
                         [-93.608485, 33.018527]
                     ]
-                ] } },
-        { "type": "Feature", "id": "23", "properties": { "name": "Maine", "production": 3115 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "23",
+            "properties": { "name": "Maine", "production": 3115 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-70.703921, 43.057759],
                         [-70.824413, 43.128959],
@@ -2225,8 +2382,16 @@ var statesData = {
                         [-70.556043, 43.320652],
                         [-70.703921, 43.057759]
                     ]
-                ] } },
-        { "type": "Feature", "id": "24", "properties": { "name": "Maryland", "production": 2205 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "24",
+            "properties": { "name": "Maryland", "production": 2205 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-75.994645, 37.95325],
@@ -2299,8 +2464,16 @@ var statesData = {
                             [-79.477979, 39.722302]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "25", "properties": { "name": "Massachusetts", "production": 1079 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "25",
+            "properties": { "name": "Massachusetts", "production": 1079 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-70.917521, 42.887974],
                         [-70.818936, 42.871543],
@@ -2338,8 +2511,16 @@ var statesData = {
                         [-71.185891, 42.789389],
                         [-70.917521, 42.887974]
                     ]
-                ] } },
-        { "type": "Feature", "id": "26", "properties": { "name": "Michigan", "production": 1291 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "26",
+            "properties": { "name": "Michigan", "production": 1291 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-83.454238, 41.732339],
@@ -2508,8 +2689,16 @@ var statesData = {
                             [-88.805209, 47.976051]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "27", "properties": { "name": "Minnesota", "production": 887 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "27",
+            "properties": { "name": "Minnesota", "production": 887 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-92.014696, 46.705401],
                         [-92.091373, 46.749217],
@@ -2595,8 +2784,16 @@ var statesData = {
                         [-92.091373, 46.787555],
                         [-92.014696, 46.705401]
                     ]
-                ] } },
-        { "type": "Feature", "id": "28", "properties": { "name": "Mississippi", "production": 0 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "28",
+            "properties": { "name": "Mississippi", "production": 0 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-88.471115, 34.995703],
                         [-88.202745, 34.995703],
@@ -2645,8 +2842,16 @@ var statesData = {
                         [-90.311367, 34.995703],
                         [-88.471115, 34.995703]
                     ]
-                ] } },
-        { "type": "Feature", "id": "29", "properties": { "name": "Missouri", "production": 764 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "29",
+            "properties": { "name": "Missouri", "production": 764 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-91.833957, 40.609566],
                         [-91.729895, 40.615043],
@@ -2702,8 +2907,16 @@ var statesData = {
                         [-93.257961, 40.582182],
                         [-91.833957, 40.609566]
                     ]
-                ] } },
-        { "type": "Feature", "id": "30", "properties": { "name": "Montana", "production": 9409 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "30",
+            "properties": { "name": "Montana", "production": 9409 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-104.047534, 49.000239],
                         [-104.042057, 47.861036],
@@ -2758,8 +2971,16 @@ var statesData = {
                         [-109.453274, 49.000239],
                         [-104.047534, 49.000239]
                     ]
-                ] } },
-        { "type": "Feature", "id": "31", "properties": { "name": "Nebraska", "production": 1160 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "31",
+            "properties": { "name": "Nebraska", "production": 1160 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-103.324578, 43.002989],
                         [-101.626726, 42.997512],
@@ -2791,8 +3012,16 @@ var statesData = {
                         [-104.053011, 43.002989],
                         [-103.324578, 43.002989]
                     ]
-                ] } },
-        { "type": "Feature", "id": "32", "properties": { "name": "Nevada", "production": 2233 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "32",
+            "properties": { "name": "Nevada", "production": 2233 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-117.027882, 42.000709],
                         [-114.04295, 41.995232],
@@ -2816,8 +3045,16 @@ var statesData = {
                         [-118.698349, 41.989755],
                         [-117.027882, 42.000709]
                     ]
-                ] } },
-        { "type": "Feature", "id": "33", "properties": { "name": "New Hampshire", "production": 1233 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "33",
+            "properties": { "name": "New Hampshire", "production": 1233 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-71.08183, 45.303304],
                         [-71.032537, 44.657025],
@@ -2848,8 +3085,16 @@ var statesData = {
                         [-71.131122, 45.243058],
                         [-71.08183, 45.303304]
                     ]
-                ] } },
-        { "type": "Feature", "id": "34", "properties": { "name": "New Jersey", "production": 26 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "34",
+            "properties": { "name": "New Jersey", "production": 26 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-74.236547, 41.14083],
                         [-73.902454, 40.998429],
@@ -2884,8 +3129,16 @@ var statesData = {
                         [-74.69661, 41.359907],
                         [-74.236547, 41.14083]
                     ]
-                ] } },
-        { "type": "Feature", "id": "35", "properties": { "name": "New Mexico", "production": 133 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "35",
+            "properties": { "name": "New Mexico", "production": 133 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-107.421329, 37.000263],
                         [-106.868158, 36.994786],
@@ -2905,8 +3158,16 @@ var statesData = {
                         [-109.042503, 37.000263],
                         [-107.421329, 37.000263]
                     ]
-                ] } },
-        { "type": "Feature", "id": "36", "properties": { "name": "New York", "production": 29541 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "36",
+            "properties": { "name": "New York", "production": 29541 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-73.343806, 45.013027],
                         [-73.332852, 44.804903],
@@ -2977,8 +3238,16 @@ var statesData = {
                         [-74.148916, 44.991119],
                         [-73.343806, 45.013027]
                     ]
-                ] } },
-        { "type": "Feature", "id": "37", "properties": { "name": "North Carolina", "production": 6207 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "37",
+            "properties": { "name": "North Carolina", "production": 6207 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-80.978661, 36.562108],
                         [-80.294043, 36.545677],
@@ -3042,8 +3311,16 @@ var statesData = {
                         [-81.679709, 36.589492],
                         [-80.978661, 36.562108]
                     ]
-                ] } },
-        { "type": "Feature", "id": "38", "properties": { "name": "North Dakota", "production": 2801 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "38",
+            "properties": { "name": "North Dakota", "production": 2801 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-97.228743, 49.000239],
                         [-97.097296, 48.682577],
@@ -3062,8 +3339,16 @@ var statesData = {
                         [-104.047534, 49.000239],
                         [-97.228743, 49.000239]
                     ]
-                ] } },
-        { "type": "Feature", "id": "39", "properties": { "name": "Ohio", "production": 255 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "39",
+            "properties": { "name": "Ohio", "production": 255 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-80.518598, 41.978802],
                         [-80.518598, 40.636951],
@@ -3113,8 +3398,16 @@ var statesData = {
                         [-80.518598, 41.978802],
                         [-80.518598, 41.978802]
                     ]
-                ] } },
-        { "type": "Feature", "id": "40", "properties": { "name": "Oklahoma", "production": 1824 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "40",
+            "properties": { "name": "Oklahoma", "production": 1824 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-100.087706, 37.000263],
                         [-94.616242, 37.000263],
@@ -3162,8 +3455,16 @@ var statesData = {
                         [-102.042974, 36.994786],
                         [-100.087706, 37.000263]
                     ]
-                ] } },
-        { "type": "Feature", "id": "41", "properties": { "name": "Oregon", "production": 29526 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "41",
+            "properties": { "name": "Oregon", "production": 29526 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-123.211348, 46.174138],
                         [-123.11824, 46.185092],
@@ -3222,8 +3523,16 @@ var statesData = {
                         [-123.370179, 46.146753],
                         [-123.211348, 46.174138]
                     ]
-                ] } },
-        { "type": "Feature", "id": "42", "properties": { "name": "Pennsylvania", "production": 4040 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "42",
+            "properties": { "name": "Pennsylvania", "production": 4040 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-79.76278, 42.252649],
                         [-79.76278, 42.000709],
@@ -3259,8 +3568,16 @@ var statesData = {
                         [-79.76278, 42.269079],
                         [-79.76278, 42.252649]
                     ]
-                ] } },
-        { "type": "Feature", "id": "44", "properties": { "name": "Rhode Island", "production": 4 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "44",
+            "properties": { "name": "Rhode Island", "production": 4 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-71.196845, 41.67757],
@@ -3284,8 +3601,16 @@ var statesData = {
                             [-71.530939, 42.01714]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "45", "properties": { "name": "South Carolina", "production": 2836 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "45",
+            "properties": { "name": "South Carolina", "production": 2836 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-82.764143, 35.066903],
                         [-82.550543, 35.160011],
@@ -3332,8 +3657,16 @@ var statesData = {
                         [-83.109191, 35.00118],
                         [-82.764143, 35.066903]
                     ]
-                ] } },
-        { "type": "Feature", "id": "46", "properties": { "name": "South Dakota", "production": 5620 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "46",
+            "properties": { "name": "South Dakota", "production": 5620 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-104.047534, 45.944106],
                         [-96.560556, 45.933153],
@@ -3365,8 +3698,16 @@ var statesData = {
                         [-104.042057, 44.996596],
                         [-104.047534, 45.944106]
                     ]
-                ] } },
-        { "type": "Feature", "id": "47", "properties": { "name": "Tennessee", "production": 9857 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "47",
+            "properties": { "name": "Tennessee", "production": 9857 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-88.054868, 36.496384],
                         [-88.071299, 36.677123],
@@ -3412,8 +3753,16 @@ var statesData = {
                         [-89.298133, 36.507338],
                         [-88.054868, 36.496384]
                     ]
-                ] } },
-        { "type": "Feature", "id": "48", "properties": { "name": "Texas", "production": 998 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "48",
+            "properties": { "name": "Texas", "production": 998 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-101.812942, 36.501861],
                         [-100.000075, 36.501861],
@@ -3568,8 +3917,16 @@ var statesData = {
                         [-103.001438, 36.501861],
                         [-101.812942, 36.501861]
                     ]
-                ] } },
-        { "type": "Feature", "id": "49", "properties": { "name": "Utah", "production": 781 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "49",
+            "properties": { "name": "Utah", "production": 781 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-112.164359, 41.995232],
                         [-111.047063, 42.000709],
@@ -3584,8 +3941,16 @@ var statesData = {
                         [-114.04295, 41.995232],
                         [-112.164359, 41.995232]
                     ]
-                ] } },
-        { "type": "Feature", "id": "50", "properties": { "name": "Vermont", "production": 1198 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "50",
+            "properties": { "name": "Vermont", "production": 1198 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-71.503554, 45.013027],
                         [-71.4926, 44.914442],
@@ -3616,8 +3981,16 @@ var statesData = {
                         [-72.308664, 45.002073],
                         [-71.503554, 45.013027]
                     ]
-                ] } },
-        { "type": "Feature", "id": "51", "properties": { "name": "Virginia", "production": 1551 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "51",
+            "properties": { "name": "Virginia", "production": 1551 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-75.397659, 38.013497],
@@ -3710,8 +4083,16 @@ var statesData = {
                             [-78.349729, 39.464886]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "53", "properties": { "name": "Washington", "production": 66181 }, "geometry": { "type": "MultiPolygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "53",
+            "properties": { "name": "Washington", "production": 66181 },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
                     [
                         [
                             [-117.033359, 49.000239],
@@ -3796,8 +4177,16 @@ var statesData = {
                             [-123.025132, 48.583992]
                         ]
                     ]
-                ] } },
-        { "type": "Feature", "id": "54", "properties": { "name": "West Virginia", "production": 1776 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "54",
+            "properties": { "name": "West Virginia", "production": 1776 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-80.518598, 40.636951],
                         [-80.518598, 39.722302],
@@ -3865,8 +4254,16 @@ var statesData = {
                         [-80.666475, 40.582182],
                         [-80.518598, 40.636951]
                     ]
-                ] } },
-        { "type": "Feature", "id": "55", "properties": { "name": "Wisconsin", "production": 1993 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "55",
+            "properties": { "name": "Wisconsin", "production": 1993 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-90.415429, 46.568478],
                         [-90.229213, 46.508231],
@@ -3944,8 +4341,16 @@ var statesData = {
                         [-90.55783, 46.584908],
                         [-90.415429, 46.568478]
                     ]
-                ] } },
-        { "type": "Feature", "id": "56", "properties": { "name": "Wyoming", "production": 180 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "56",
+            "properties": { "name": "Wyoming", "production": 180 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-109.080842, 45.002073],
                         [-105.91517, 45.002073],
@@ -3961,8 +4366,16 @@ var statesData = {
                         [-111.05254, 45.002073],
                         [-109.080842, 45.002073]
                     ]
-                ] } },
-        { "type": "Feature", "id": "72", "properties": { "name": "Puerto Rico", "production": 0 }, "geometry": { "type": "Polygon", "coordinates": [
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "72",
+            "properties": { "name": "Puerto Rico", "production": 0 },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
                     [
                         [-66.448338, 17.984326],
                         [-66.771478, 18.006234],
@@ -3982,7 +4395,9 @@ var statesData = {
                         [-66.234737, 17.929556],
                         [-66.448338, 17.984326]
                     ]
-                ] } }
+                ]
+            }
+        }
     ]
 };
 
