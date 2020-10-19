@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../static/mars.css">
+  <meta charset="UTF-8">
+<head>
+  <title>Mars Homepage</title>
+<!-- <link rel="stylesheet" href="reset.css"> -->
+<div>
+  <nav>
+<div class="container">
+  <element id="navbar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Overview </a>
+      </li>
+      <li>
+        <a href="/maps">Maps</a>
+      </li>
+      <li>
+        <a href="/scrape">Get Most Recent Data</a>
+      </li>
+    </ul>
+  </nav>
+</element>
+</div>  
+<h2 class="title"> <br> Mission to Mars <br></h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-5">
+        <div id="sunburst"></div>
+      </div>
+      <div class="col-md-5">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          Last Refresh: {{r_last_refresh}}
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="{{ renewable_link_0 }}">{{ renewable_title_0 }}</a>
+            </li>
+            <li>
+              <a href="{{ renewable_link_1 }}">{{ renewable_title_1 }}</a>
+            </li>
+            <li>
+              <a href="{{ renewable_link_2 }}">{{ renewable_title_2 }}</a>
+            </li>
+            <li>
+              <a href="{{ renewable_link_3 }}">{{ renewable_title_3 }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/app.js"></script>
+  <!-- <script src="./static/js/bonus.js"></script>
+  <script src="samples.json"></script> -->
+  
+</body>
+
+</html>

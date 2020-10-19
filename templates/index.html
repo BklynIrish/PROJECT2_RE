@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Visualizations of Renewable Energy Consumption in the US</title>
-
-
+    <title>Interactive Visualizations of Renewable Energy</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/76c400baa8.js" crossorigin="anonymous"></script>
@@ -19,7 +17,7 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
                     <a class="navbar-brand h1 goofy_blue" href="./index.html">
-                        <h1>Renewable Energy Consumption</h1>
+                        <h1>Renewable Energy</h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -33,27 +31,27 @@
                                         <i class="fas fa-chart-line"></i>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="solar.html">
+                                        <a class="dropdown-item" href="/solar">
                                             solar
                                             <i class="fas fa-sun"></i>
                                         </a>
-                                        <a class="dropdown-item" href="hydro.html">
+                                        <a class="dropdown-item" href="/hydro">
                                             hydroelectric
                                             <i class="fas fa-tint"></i>
                                         </a>
-                                        <a class="dropdown-item" href="location.html">
+                                        <a class="dropdown-item" href="/location">
                                             location
                                             <i class="far fa-map-marker"></i>
                                         </a>
-                                        <a class="dropdown-item" href="wind.html">
+                                        <a class="dropdown-item" href="/wind">
                                             wind
                                             <i class="fas fa-wind"></i>
                                         </a>
-                                        <a class="dropdown-item" href="heatmap.html">
+                                        <a class="dropdown-item" href="/heatmap">
                                             heatmap
                                             <i class="fas fa-thermometer-half"></i>
                                         </a>
-                                        <a class="dropdown-item" href="sunburst.html">
+                                        <a class="dropdown-item" href="/sunburst">
                                             sunburst
                                             <i class="fas fa-meteor"></i>
                                         </a>
@@ -94,48 +92,55 @@
 
                             <div class="col-lg-12">
                                 <div class="col-lg-3">
-                                    <img class="img-responsive" style="float: left;" src="../images/sunburst.png" width=200%>
+                                    <img class="img-responsive" style="float: left;" src="static/images/sunburst.png" width=200%>
                                 </div>
 
-                                <p class="normal_text"> The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations that will tell a story through using data in our database
-                                    on Renewable Energy Resource Consumption in the US.
+                                <p class="normal_text"> The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations/plots/graphs that would in effect tell a story regarding
+                                    the otherwise boring dataset.
                                     <br>
-                                    <br> We have become more and more aware of the need to care for our environment therefore Renewable Energy Resources are becoming of greater interest, prevalence, and use. The effect of some types of conventional energy
-                                    sources, such as fossil fuels are being shown to have had and continue to have a negative impact on controversial topics such as Global Warming and the effect that such traditional, less clean, and limited energy sources
-                                    have on slowly deteriorating have on our slowly deteriorating ozone layer and, hence, the quality of the air we breathe on a daily basis.
-                                    <br>
-                                    <br> Solar Power, Wind Power, and Hydro Power/Hydroelectricity are the major three sources of RE (Renewable Energy). Hence, we will look particularly at theses three types of energy and how much of these we are using
-                                    through a series of visualizations. The fact alone that these resources are renewable by natural forces is of integral importance to why they are so important.
+                                    <br> We have created a variety of different maps that tell us facts pertaining the to consumption of Renewable Energy Resource consumption in the United States. Seeing that we have become more and more aware of the
+                                    need to care for our environment and the effect of some types of conventional energy sources, such as fossil fuels, have been shown and continuously are being shown to have a negative impact on topics such as Global
+                                    Warming, the slow but very real effect some of these fuels emissions have had on our ozone layer and hence the quality of the air we breathe, we thought it may be interesting to see how such use of cleaner energy resources
+                                    such as Solar Power, Wind Power, and Hydro Power/Hydroelectricity, which happen to the major three and leading sources of RE (Renewable Energy) resources has grown over the past decade or two and how much of these types
+                                    of energy we are using in relation to the less clean energy resources available. Also, the fact the these energy sources are Renewable, meaning we won't run out, this lends itself to an interesting analysis through
+                                    visualizations.
                                 </p>
 
                             </div>
+
+
                         </div>
                     </div>
                     <div class="col-md-4 ml-auto">
                         <div class="white" style="padding: 10px">
-                            <h3>Some of our Visualizations</h3>
-
+                            <h3>
+                                Some of our Visualizations
+                            </h3>
+                            <hr>
                             <div class="row">
+
                                 <div class="col-lg-6">
                                     <a href="./hydro.html" title="">
-                                        <img class="img-responsive" src="../images/hydro.png" width="100%">
+                                        <img class="img-responsive" src="static/images/hydro.png" width="100%">
                                     </a>
+
                                 </div>
                                 <div class="col-lg-6">
                                     <a href="./solar.html" title="">
-                                        <img class="img-responsive" src="../images/solar.png" width="100%">
+                                        <img class="img-responsive" src="static/images/solar.png" width="100%">
                                     </a>
                                 </div>
                             </div>
                             <div class="row">
+
                                 <div class="col-lg-6">
-                                    <a href="./heatmap.html" title="">
-                                        <img class="img-responsive" style="float: left;" src="../images/heatmap.png" width="100%">
+                                    <a href="./wind.html" title="">
+                                        <img class="img-responsive" style="float: left;" src="static/images/wind.png" width="100%">
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="./wind.html" title="">
-                                        <img class="img-responsive" style="float: left;" src="../images/wind.png" width="100%">
+                                    <a href="./sunburst.html" title="">
+                                        <img class="img-responsive" style="float: left;" src="static/images/sunburst.png" width="100%">
                                     </a>
                                 </div>
                             </div>
@@ -150,12 +155,7 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Page created by: Brandon McDermott, Jame Cadigan, Taurean Huthchison, and Sahr Musa
-                <br>
-                <br>
-            Data Sources: https://www.energy.gov/science-innovation/energy-sources/renewable-energy/water,
-                          https://www.eia.gov
-                          https://www.sciencedaily.com/news/earth_climate/renewable_energy/</span>
+            <span class="text-muted">Page created by Group 8 2020</span>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
